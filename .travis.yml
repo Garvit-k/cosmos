@@ -57,5 +57,9 @@ matrix:
 before_install:
    - eval "${MATRIX_EVAL}"
 
+language: java
+jdk:
+  - oraclejdk8
 
+script: ant build
  

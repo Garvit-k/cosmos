@@ -1,0 +1,1391 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="cosmos">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="cosmos.classpath">
+        <pathelement location="bin"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/artificial_intelligence/src/Linear_Regression">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/backtracking/src/crossword_puzzle">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/backtracking/src/knight_tour">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/backtracking/src/n_queen">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/backtracking/src/number_of_ways_in_maze">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/backtracking/src/powerset">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/backtracking/src/subset_sum">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/bit_manipulation/src/bit_division">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/bit_manipulation/src/byte_swapper">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/bit_manipulation/src/convert_number_binary">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/bit_manipulation/src/count_set_bits">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/bit_manipulation/src/flip_bits">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/bit_manipulation/src/hamming_distance">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/bit_manipulation/src/lonely_integer">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/bit_manipulation/src/magic_number">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/bit_manipulation/src/power_of_2">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/bit_manipulation/src/thrice_unique_number">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/cellular_automaton/src/conways_game_of_life">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/cellular_automaton/src/elementary_cellular_automata">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/cellular_automaton/src/genetic_algorithm">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/cellular_automaton/src/langtons_ant">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/computational_geometry/src/2d_line_intersection">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/computational_geometry/src/area_of_polygon">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/computational_geometry/src/area_of_triangle">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/computational_geometry/src/distance_between_points">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/computational_geometry/src/graham_scan">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/computational_geometry/src/quickhull">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/cryptography/src/affine_cipher">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/cryptography/src/baconian_cipher">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/cryptography/src/caesar_cipher">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/cryptography/src/morse_cipher">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/cryptography/src/rot13_cipher">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/cryptography/src/rsa">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/cryptography/src/vigenere_cipher">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/hashs/hash_table">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/list/circular_linked_list">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/list/doubly_linked_list">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/list/singly_linked_list">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+                <exclude name="operations/unclassified/"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/list/singly_linked_list/operations/unclassified">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/list/skip_list">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/queue/queue">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/queue/queue_using_linked_list">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/queue/queue_using_stack">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/queue/reverse_queue">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/stack/balanced_expression">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/stack/infix_to_postfix">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/stack/reverse_stack">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/stack/stack">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/binary_tree/avl_tree">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/binary_tree/binary_tree/diameter">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/binary_tree/binary_tree/is_balance">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/binary_tree/binary_tree/make_binary_tree/from_inorder_and_preorder">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/binary_tree/binary_tree/maximum_height">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/binary_tree/binary_tree/minimum_height">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/binary_tree/binary_tree/traversal/preorder/left_view">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/binary_tree/binary_tree/tree">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+                <exclude name="bottom_view_binary_tree/"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/binary_tree/binary_tree/tree/bottom_view_binary_tree">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/binary_tree/treap">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/heap/max_heap">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/heap/min_heap">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/multiway_tree/fenwick_tree">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/multiway_tree/red_black_tree">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/multiway_tree/splay_tree">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/multiway_tree/union_find">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/space_partitioning_tree/interval_tree">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/space_partitioning_tree/kd_tree">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/space_partitioning_tree/segment_tree">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/data_structures/src/tree/tree/trie">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/design_pattern/src/singleton_pattern">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/divide_conquer/src/inversion_count">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/divide_conquer/src/karatsuba_multiplication">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/Array_Median">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/binomial_coefficient">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/boolean_parenthesization">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/box_stacking">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/coin_change">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/edit_distance">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/factorial">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/knapsack">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/largest_sum_contiguous_subarray">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/longest_bitonic_sequence">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/longest_common_subsequence">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/longest_increasing_subsequence">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/matrix_chain_multiplication">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/maximum_sum_sub_matrix">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/min_cost_path">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/shortest_common_supersequence">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/dynamic_programming/src/subset_sum">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/bellman_ford_algorithm">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/biconnected_components">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/Bipartite_check">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/bipartite_checking">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/breadth_first_search">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/bron_kerbosch_algorithm">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/centroid_decomposition">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/cycle_undirected_graph">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/depth_first_search">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/eulerian_path">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/floyd_warshall_algorithm">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/ford_fulkerson_maximum_flow">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/graph_coloring">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/karger_minimum_cut">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/kruskal_minimum_spanning_tree">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/steiner_tree">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/graph_algorithms/src/topological_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/greedy_algorithms/src/activity_selection">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/greedy_algorithms/src/dijkstra_shortest_path">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/greedy_algorithms/src/fractional_knapsack">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/greedy_algorithms/src/hillclimber">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/greedy_algorithms/src/minimum_coins">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/amicable_numbers">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/armstrong_numbers">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/automorphic_numbers">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/babylonian_method">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/binomial_coefficient">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/catalan_number">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/check_is_square">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/count_digits">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/count_trailing_zeroes">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/divided_differences">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/euler_totient">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/exponentiation_power">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/factorial">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/fast_fourier_transform">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/fibonacci_number">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/gaussian_elimination">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/gcd_and_lcm">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/greatest_digit_in_number">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/hill_climbing">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/horner_polynomial_evaluation">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/jacobi_method">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/karatsuba_multiplication">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/largrange_polynomial">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/lexicographic_string_rank">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/lucky_number">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/modular_inverse">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/newton_polynomial">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/next_larger_number">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/pascal_triangle">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/perfect_number">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/prime_factors">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/replace_0_with_5">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/reverse_factorial">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/reverse_number">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/sieve_of_atkin">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/sieve_of_eratosthenes">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/smallest_digit_in_number">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/sum_of_digits">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/tower_of_hanoi">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/tribonacci_numbers">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/mathematical_algorithms/src/tridiagonal_matrix">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/operating_system/src/scheduling/first_come_first_serve">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/operating_system/src/scheduling/round_robin_scheduling">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/randomized_algorithms/src/shuffle_an_array">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/search/src/binary_search">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/search/src/exponential_search">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/search/src/interpolation_search">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/search/src/jump_search">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/search/src/ternary_search">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/selection_algorithms/src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/bead_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/bogo_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/bubble_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/bucket_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/circle_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/comb_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/counting_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/cycle_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/gnome_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/heap_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/insertion_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/merge_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/pigeonhole_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/quick_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/radix_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/selection_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/shaker_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/shell_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/sleep_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/stooge_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/topological_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/sorting/src/tree_sort">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/string_algorithms/src/aho_corasick_algorithm">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/string_algorithms/src/anagram_search">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/string_algorithms/src/finite_automata">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/string_algorithms/src/levenshtein_distance">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/string_algorithms/src/palindrome_checker">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/string_algorithms/src/pangram_checker">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/string_algorithms/src/password_strength_checker">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/string_algorithms/src/rabin_karp_algorithm">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/string_algorithms/src/suffix_array">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="code/unclassified/src/average">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="code/artificial_intelligence/src/Linear_Regression"/>
+            <src path="code/backtracking/src/crossword_puzzle"/>
+            <src path="code/backtracking/src/knight_tour"/>
+            <src path="code/backtracking/src/n_queen"/>
+            <src path="code/backtracking/src/number_of_ways_in_maze"/>
+            <src path="code/backtracking/src/powerset"/>
+            <src path="code/backtracking/src/subset_sum"/>
+            <src path="code/bit_manipulation/src/bit_division"/>
+            <src path="code/bit_manipulation/src/byte_swapper"/>
+            <src path="code/bit_manipulation/src/convert_number_binary"/>
+            <src path="code/bit_manipulation/src/count_set_bits"/>
+            <src path="code/bit_manipulation/src/flip_bits"/>
+            <src path="code/bit_manipulation/src/hamming_distance"/>
+            <src path="code/bit_manipulation/src/lonely_integer"/>
+            <src path="code/bit_manipulation/src/magic_number"/>
+            <src path="code/bit_manipulation/src/power_of_2"/>
+            <src path="code/bit_manipulation/src/thrice_unique_number"/>
+            <src path="code/cellular_automaton/src/conways_game_of_life"/>
+            <src path="code/cellular_automaton/src/elementary_cellular_automata"/>
+            <src path="code/cellular_automaton/src/genetic_algorithm"/>
+            <src path="code/cellular_automaton/src/langtons_ant"/>
+            <src path="code/computational_geometry/src/2d_line_intersection"/>
+            <src path="code/computational_geometry/src/area_of_polygon"/>
+            <src path="code/computational_geometry/src/area_of_triangle"/>
+            <src path="code/computational_geometry/src/distance_between_points"/>
+            <src path="code/computational_geometry/src/graham_scan"/>
+            <src path="code/computational_geometry/src/quickhull"/>
+            <src path="code/cryptography/src/affine_cipher"/>
+            <src path="code/cryptography/src/baconian_cipher"/>
+            <src path="code/cryptography/src/caesar_cipher"/>
+            <src path="code/cryptography/src/morse_cipher"/>
+            <src path="code/cryptography/src/rot13_cipher"/>
+            <src path="code/cryptography/src/rsa"/>
+            <src path="code/cryptography/src/vigenere_cipher"/>
+            <src path="code/data_structures/src/hashs/hash_table"/>
+            <src path="code/data_structures/src/list/circular_linked_list"/>
+            <src path="code/data_structures/src/list/doubly_linked_list"/>
+            <src path="code/data_structures/src/list/singly_linked_list"/>
+            <src path="code/data_structures/src/list/singly_linked_list/operations/unclassified"/>
+            <src path="code/data_structures/src/list/skip_list"/>
+            <src path="code/data_structures/src/queue/queue"/>
+            <src path="code/data_structures/src/queue/queue_using_linked_list"/>
+            <src path="code/data_structures/src/queue/queue_using_stack"/>
+            <src path="code/data_structures/src/queue/reverse_queue"/>
+            <src path="code/data_structures/src/stack/balanced_expression"/>
+            <src path="code/data_structures/src/stack/infix_to_postfix"/>
+            <src path="code/data_structures/src/stack/reverse_stack"/>
+            <src path="code/data_structures/src/stack/stack"/>
+            <src path="code/data_structures/src/tree/binary_tree/avl_tree"/>
+            <src path="code/data_structures/src/tree/binary_tree/binary_tree/diameter"/>
+            <src path="code/data_structures/src/tree/binary_tree/binary_tree/is_balance"/>
+            <src path="code/data_structures/src/tree/binary_tree/binary_tree/make_binary_tree/from_inorder_and_preorder"/>
+            <src path="code/data_structures/src/tree/binary_tree/binary_tree/maximum_height"/>
+            <src path="code/data_structures/src/tree/binary_tree/binary_tree/minimum_height"/>
+            <src path="code/data_structures/src/tree/binary_tree/binary_tree/traversal/preorder/left_view"/>
+            <src path="code/data_structures/src/tree/binary_tree/binary_tree/tree"/>
+            <src path="code/data_structures/src/tree/binary_tree/binary_tree/tree/bottom_view_binary_tree"/>
+            <src path="code/data_structures/src/tree/binary_tree/treap"/>
+            <src path="code/data_structures/src/tree/heap/max_heap"/>
+            <src path="code/data_structures/src/tree/heap/min_heap"/>
+            <src path="code/data_structures/src/tree/multiway_tree/fenwick_tree"/>
+            <src path="code/data_structures/src/tree/multiway_tree/red_black_tree"/>
+            <src path="code/data_structures/src/tree/multiway_tree/splay_tree"/>
+            <src path="code/data_structures/src/tree/multiway_tree/union_find"/>
+            <src path="code/data_structures/src/tree/space_partitioning_tree/interval_tree"/>
+            <src path="code/data_structures/src/tree/space_partitioning_tree/kd_tree"/>
+            <src path="code/data_structures/src/tree/space_partitioning_tree/segment_tree"/>
+            <src path="code/data_structures/src/tree/tree/trie"/>
+            <src path="code/design_pattern/src/singleton_pattern"/>
+            <src path="code/divide_conquer/src/inversion_count"/>
+            <src path="code/divide_conquer/src/karatsuba_multiplication"/>
+            <src path="code/dynamic_programming/src/Array_Median"/>
+            <src path="code/dynamic_programming/src/binomial_coefficient"/>
+            <src path="code/dynamic_programming/src/boolean_parenthesization"/>
+            <src path="code/dynamic_programming/src/box_stacking"/>
+            <src path="code/dynamic_programming/src/coin_change"/>
+            <src path="code/dynamic_programming/src/edit_distance"/>
+            <src path="code/dynamic_programming/src/factorial"/>
+            <src path="code/dynamic_programming/src/knapsack"/>
+            <src path="code/dynamic_programming/src/largest_sum_contiguous_subarray"/>
+            <src path="code/dynamic_programming/src/longest_bitonic_sequence"/>
+            <src path="code/dynamic_programming/src/longest_common_subsequence"/>
+            <src path="code/dynamic_programming/src/longest_increasing_subsequence"/>
+            <src path="code/dynamic_programming/src/matrix_chain_multiplication"/>
+            <src path="code/dynamic_programming/src/maximum_sum_sub_matrix"/>
+            <src path="code/dynamic_programming/src/min_cost_path"/>
+            <src path="code/dynamic_programming/src/shortest_common_supersequence"/>
+            <src path="code/dynamic_programming/src/subset_sum"/>
+            <src path="code/graph_algorithms/src/bellman_ford_algorithm"/>
+            <src path="code/graph_algorithms/src/biconnected_components"/>
+            <src path="code/graph_algorithms/src/Bipartite_check"/>
+            <src path="code/graph_algorithms/src/bipartite_checking"/>
+            <src path="code/graph_algorithms/src/breadth_first_search"/>
+            <src path="code/graph_algorithms/src/bron_kerbosch_algorithm"/>
+            <src path="code/graph_algorithms/src/centroid_decomposition"/>
+            <src path="code/graph_algorithms/src/cycle_undirected_graph"/>
+            <src path="code/graph_algorithms/src/depth_first_search"/>
+            <src path="code/graph_algorithms/src/eulerian_path"/>
+            <src path="code/graph_algorithms/src/floyd_warshall_algorithm"/>
+            <src path="code/graph_algorithms/src/ford_fulkerson_maximum_flow"/>
+            <src path="code/graph_algorithms/src/graph_coloring"/>
+            <src path="code/graph_algorithms/src/karger_minimum_cut"/>
+            <src path="code/graph_algorithms/src/kruskal_minimum_spanning_tree"/>
+            <src path="code/graph_algorithms/src/steiner_tree"/>
+            <src path="code/graph_algorithms/src/topological_sort"/>
+            <src path="code/greedy_algorithms/src/activity_selection"/>
+            <src path="code/greedy_algorithms/src/dijkstra_shortest_path"/>
+            <src path="code/greedy_algorithms/src/fractional_knapsack"/>
+            <src path="code/greedy_algorithms/src/hillclimber"/>
+            <src path="code/greedy_algorithms/src/minimum_coins"/>
+            <src path="code/mathematical_algorithms/src/amicable_numbers"/>
+            <src path="code/mathematical_algorithms/src/armstrong_numbers"/>
+            <src path="code/mathematical_algorithms/src/automorphic_numbers"/>
+            <src path="code/mathematical_algorithms/src/babylonian_method"/>
+            <src path="code/mathematical_algorithms/src/binomial_coefficient"/>
+            <src path="code/mathematical_algorithms/src/catalan_number"/>
+            <src path="code/mathematical_algorithms/src/check_is_square"/>
+            <src path="code/mathematical_algorithms/src/count_digits"/>
+            <src path="code/mathematical_algorithms/src/count_trailing_zeroes"/>
+            <src path="code/mathematical_algorithms/src/divided_differences"/>
+            <src path="code/mathematical_algorithms/src/euler_totient"/>
+            <src path="code/mathematical_algorithms/src/exponentiation_power"/>
+            <src path="code/mathematical_algorithms/src/factorial"/>
+            <src path="code/mathematical_algorithms/src/fast_fourier_transform"/>
+            <src path="code/mathematical_algorithms/src/fibonacci_number"/>
+            <src path="code/mathematical_algorithms/src/gaussian_elimination"/>
+            <src path="code/mathematical_algorithms/src/gcd_and_lcm"/>
+            <src path="code/mathematical_algorithms/src/greatest_digit_in_number"/>
+            <src path="code/mathematical_algorithms/src/hill_climbing"/>
+            <src path="code/mathematical_algorithms/src/horner_polynomial_evaluation"/>
+            <src path="code/mathematical_algorithms/src/jacobi_method"/>
+            <src path="code/mathematical_algorithms/src/karatsuba_multiplication"/>
+            <src path="code/mathematical_algorithms/src/largrange_polynomial"/>
+            <src path="code/mathematical_algorithms/src/lexicographic_string_rank"/>
+            <src path="code/mathematical_algorithms/src/lucky_number"/>
+            <src path="code/mathematical_algorithms/src/modular_inverse"/>
+            <src path="code/mathematical_algorithms/src/newton_polynomial"/>
+            <src path="code/mathematical_algorithms/src/next_larger_number"/>
+            <src path="code/mathematical_algorithms/src/pascal_triangle"/>
+            <src path="code/mathematical_algorithms/src/perfect_number"/>
+            <src path="code/mathematical_algorithms/src/prime_factors"/>
+            <src path="code/mathematical_algorithms/src/replace_0_with_5"/>
+            <src path="code/mathematical_algorithms/src/reverse_factorial"/>
+            <src path="code/mathematical_algorithms/src/reverse_number"/>
+            <src path="code/mathematical_algorithms/src/sieve_of_atkin"/>
+            <src path="code/mathematical_algorithms/src/sieve_of_eratosthenes"/>
+            <src path="code/mathematical_algorithms/src/smallest_digit_in_number"/>
+            <src path="code/mathematical_algorithms/src/sum_of_digits"/>
+            <src path="code/mathematical_algorithms/src/tower_of_hanoi"/>
+            <src path="code/mathematical_algorithms/src/tribonacci_numbers"/>
+            <src path="code/mathematical_algorithms/src/tridiagonal_matrix"/>
+            <src path="code/operating_system/src/scheduling/first_come_first_serve"/>
+            <src path="code/operating_system/src/scheduling/round_robin_scheduling"/>
+            <src path="code/randomized_algorithms/src/shuffle_an_array"/>
+            <src path="code/search/src/binary_search"/>
+            <src path="code/search/src/exponential_search"/>
+            <src path="code/search/src/interpolation_search"/>
+            <src path="code/search/src/jump_search"/>
+            <src path="code/search/src/ternary_search"/>
+            <src path="code/selection_algorithms/src"/>
+            <src path="code/sorting/src/bead_sort"/>
+            <src path="code/sorting/src/bogo_sort"/>
+            <src path="code/sorting/src/bubble_sort"/>
+            <src path="code/sorting/src/bucket_sort"/>
+            <src path="code/sorting/src/circle_sort"/>
+            <src path="code/sorting/src/comb_sort"/>
+            <src path="code/sorting/src/counting_sort"/>
+            <src path="code/sorting/src/cycle_sort"/>
+            <src path="code/sorting/src/gnome_sort"/>
+            <src path="code/sorting/src/heap_sort"/>
+            <src path="code/sorting/src/insertion_sort"/>
+            <src path="code/sorting/src/merge_sort"/>
+            <src path="code/sorting/src/pigeonhole_sort"/>
+            <src path="code/sorting/src/quick_sort"/>
+            <src path="code/sorting/src/radix_sort"/>
+            <src path="code/sorting/src/selection_sort"/>
+            <src path="code/sorting/src/shaker_sort"/>
+            <src path="code/sorting/src/shell_sort"/>
+            <src path="code/sorting/src/sleep_sort"/>
+            <src path="code/sorting/src/stooge_sort"/>
+            <src path="code/sorting/src/topological_sort"/>
+            <src path="code/sorting/src/tree_sort"/>
+            <src path="code/string_algorithms/src/aho_corasick_algorithm"/>
+            <src path="code/string_algorithms/src/anagram_search"/>
+            <src path="code/string_algorithms/src/finite_automata"/>
+            <src path="code/string_algorithms/src/levenshtein_distance"/>
+            <src path="code/string_algorithms/src/palindrome_checker"/>
+            <src path="code/string_algorithms/src/pangram_checker"/>
+            <src path="code/string_algorithms/src/password_strength_checker"/>
+            <src path="code/string_algorithms/src/rabin_karp_algorithm"/>
+            <src path="code/string_algorithms/src/suffix_array"/>
+            <src path="code/unclassified/src/average"/>
+            <exclude name="operations/unclassified/"/>
+            <exclude name="bottom_view_binary_tree/"/>
+            <classpath refid="cosmos.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>
